@@ -1,0 +1,28 @@
+* PySpark CSV Processing
+
+** What it does
+- Reads a CSV file with order data
+- Removes duplicate rows
+- Removes rows that are completely empty
+- Saves the removed empty rows to a separate CSV file
+- Saves statistics about rows processed to a JSON file
+- Calculates the number of rows per month based on the `purchase_date`
+- Saves monthly counts to a CSV file
+
+** How to run
+
+1. Put your CSV file in the path set in the code (or update the path).
+2. Run the script with:
+3. After running, you will get:
+- `discarded_rows.csv` (empty rows)
+- `processing_stats.json` (processing info)
+- `monthly_metrics.csv` (row counts by month)
+
+** Notes
+
+- Make sure Apache Spark and PySpark are installed.
+- The input CSV must have a `purchase_date` column.
+
+
+
+
